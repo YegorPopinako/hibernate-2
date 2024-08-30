@@ -1,0 +1,11 @@
+package ua.java.dao;
+
+import org.hibernate.SessionFactory;
+import ua.java.entity.Customer;
+
+public class CustomerDAO extends GenericDAO<Customer> {
+
+    public CustomerDAO(SessionFactory sessionFactory) {
+        super(Customer.class, sessionFactory);
+    }
+}
