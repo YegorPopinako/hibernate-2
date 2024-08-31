@@ -1,5 +1,7 @@
 package ua.java.enums;
 
+import lombok.Getter;
+
 public enum Rating {
     G("G"),
     PG("PG"),
@@ -7,6 +9,7 @@ public enum Rating {
     R("R"),
     NC_17("NC-17");
 
+    @Getter
     private final String value;
 
     Rating(String value) {
